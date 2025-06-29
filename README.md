@@ -1,7 +1,5 @@
 # Smart_City_End_to_End_DataEngineering_Project
-
 ![Architecture Diagram](https://github.com/DivineSamOfficial/SmartCityProject/blob/main/Analysis-1.png)
-
 # Smart City End to End Real-Time Data Streaming Pipeline
 
 ## Project Overview
