@@ -62,3 +62,59 @@ This project aims to create a comprehensive real-time data streaming pipeline fo
    ```bash
    git clone https://github.com/SmartCityProject/smart-city-pipeline.git
    cd smart-city-pipeline
+2. **Configure Docker**:
+   - Ensure Docker and Docker Compose are installed and running.
+   - Configure Kafka and Spark in `docker-compose.yml`.
+   - Start the services:
+     ```sh
+     docker-compose up -d
+     ```
+
+3. **AWS Configuration**:
+   - Set up AWS IAM roles and permissions.
+   - Configure AWS S3 buckets, Glue crawlers, and Athena.
+   - Update the configuration files with your AWS credentials and resource details.
+
+4. **Run Data Ingestion**:
+   - Start producing data to Kafka topics using IoT data simulators.
+
+5. **Run Spark Streaming**:
+   - Submit the Spark job to process and stream data to S3:
+     ```sh
+     spark-submit --master local[2] your-spark-job.py
+     ```
+
+6. **Query Data with Athena**:
+   - Use AWS Athena to query the processed data stored in S3.
+
+7. **Visualize Data with QuickSight**:
+   - Create an Amazon QuickSight analysis and build your dashboard with the processed data.
+
+## Dashboard
+
+The dashboard created in Amazon QuickSight includes the following visualizations:
+
+- **Total Number of Entries in Each Table**: KPI widgets or bar charts.
+- **Average Speed of Vehicles**: Single KPI value.
+- **Number of Emergency Incidents**: Single KPI value.
+- **Time Series Analysis**: Line charts for vehicle data, weather data, and emergency incidents over time.
+- **Geographic Visualization**: Maps for route visualization and vehicle locations.
+- **Heat Maps**: For GPS data points density.
+- **Detailed Analysis**: Tables and pie charts for detailed data insights.
+
+## Conclusion
+
+This project demonstrates the power of modern data engineering tools to handle complex, real-time data streams and deliver actionable insights for Smart City initiatives. The use of AWS services ensures scalability, reliability, and ease of data management, making it an excellent example of an end-to-end data streaming pipeline.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Thanks to the open-source community for providing the tools and libraries used in this project.
+- Special thanks to my team and mentors for their support and guidance.
+
+```
+
+This `README.md` provides a clear and detailed overview of the project, including the technologies used, workflow, setup instructions, and visualizations created in Amazon QuickSight. Adjust any specifics like the repository URL, architecture diagram path, and other details as needed.
