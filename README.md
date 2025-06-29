@@ -10,7 +10,7 @@ This project aims to create a comprehensive real-time data streaming pipeline fo
 
 ## Architecture Overview
 
-![Architecture Diagram](https://github.com/DivineSamOfficial/SmartCityProject/blob/main/SysArch.png)
+![System Architecture](https://github.com/Obinnaval0001/Smart_City_End_to_End_DataEngineering_Project/blob/main/System%20Architecture.png)
 
 ## Technologies Used
 
